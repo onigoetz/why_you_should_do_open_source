@@ -8,6 +8,16 @@
 
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/SQ.css">
+    <style>
+        .reveal h1 {
+            text-shadow: 1px 3px 2px #777;
+        }
+
+        .reveal section img {
+            border: none;
+            box-shadow:0 0 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
 
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -27,19 +37,25 @@
         <section>
             <h1>Open Source at Swissquote</h1>
             <h2>Should we do it ?</h2>
-            <p><small>Yes, this presentation is Open Source</small></p>
+            <p>
+                <small>Yes, this presentation is Open Source</small>
+            </p>
         </section>
         <section>
             <h2>Hypothetical lands</h2>
             <img src="resources/unicorn.jpg" />
         </section>
+
+
+        <!-- Introduction - Others do it -->
+
         <section>
             <h2>Quick Questions</h2>
             <ul>
-                <li>Who has already used an open source product ?</li>
-                <li>Who has noticed a bug or wanted a feature in an open source product ?</li>
-                <li>Who reported it ?</li>
-                <li>Who contributed to fix/improve the product ?</li>
+                <li class="fragment">Who has already used an open source product ?</li>
+                <li class="fragment">Who has noticed a bug or wanted a feature in an open source product ?</li>
+                <li class="fragment">Who reported it ?</li>
+                <li class="fragment">Who contributed to fix/improve the product ?</li>
             </ul>
         </section>
         <section>
@@ -77,18 +93,28 @@
                 + many more
             </div>
         </section>
+
+        <!-- We should do too ! -->
+
+        <section><h1>It's time to<br /> give back!</h1></section>
         <section>
-            <h2>But, we're not a technology company !</h2>
+            <blockquote>
+                <h2>But, we're not a technology company !</h2>
+                <cite>- Someone at Swissquote</cite>
+            </blockquote>
+        </section>
+        <section>
             <img src="resources/our_values.png">
         </section>
         <section>
             <h2>And what do innovators, pioneers and game-changers do ?</h2>
-            <ul>
-                <li>They show it to others...</li>
-            </ul>
         </section>
         <section>
-            <h2>Other innovators, pioneers and game-changers out there</h2>
+            <h2>They show it to others.</h2>
+        </section>
+
+        <section>
+            <h2>Other innovators, pioneers and game-changers</h2>
             <div tagcloud bw>
                 Netflix
                 AirBnb
@@ -108,24 +134,38 @@
                 Financial Times
                 Goldman Sachs
             </div>
-            <p>None of these has <em>Technology</em> as a main goal</p>
+        </section>
+
+
+        <section>
+            <blockquote>
+                <h2>Okay, how do I do this open source thing?</h2>
+                <cite>- Someone in this room</cite>
+            </blockquote>
         </section>
 
         <section>
-            <h2>Okay, how do I do this open source thing?</h2>
+            <h2>Two possible approaches.</h2>
         </section>
+
+        <!-- Hot to contribute 1 -->
 
         <section>
             <h2>1. Contribute to existing projects</h2>
         </section>
 
         <section>
-            <blockquote>We didn't like how <strong>project-x</strong> worked, so we created
-                <strong>sq-project-x</strong></blockquote>
-            <p>Sounds familiar ?</p>
-            <blockquote><strong>project-x</strong> didn't fit exactly our needs, so we contributed the missing features
+            <blockquote>
+                <h2>We didn't like how <strong>project-x</strong> worked, so we created <strong>sq-project-x</strong></h2>
+                <cite>- Someone at Swissquote</cite>
             </blockquote>
-            <p>Sounds better, right ?</p>
+        </section>
+
+        <section>
+            <blockquote>
+                <h2><strong>project-x</strong> didn't fit exactly our needs, so we contributed the missing features</h2>
+                <cite>- Someone at Swissquote</cite>
+            </blockquote>
         </section>
 
         <section>
@@ -134,26 +174,43 @@
         </section>
 
         <section>
+            <h3>Cons</h3>
             <ul>
-                <li>Pro
-                    <ul>
-                        <li>You had to do the work anyway.</li>
-                        <li>You are not the only maintainer of your solution. (more code to maintain, yay !)</li>
-                        <li>You put a smile on the product's maintainer's face.</li>
-                        <li>Your employees will be happy to work on things "they can put on their resume"</li>
-                    </ul>
-                </li>
-                <li>Cons
-                    <ul>
-                        <li>Doing a proper open source contribution takes more time than just doing it for yourself.
-                        </li>
-                    </ul>
+                <li class="fragment">Doing a proper open source contribution takes more time than just doing it for yourself.</li>
+            </ul>
+
+            <h3 class="fragment">Pros</h3>
+            <ul>
+                <li class="fragment">You had to do the work anyway.</li>
+                <li class="fragment">You are not the only maintainer of your solution.</li>
+                <li class="fragment">You put a smile on the product's maintainer's face.</li>
+                <li class="fragment">Your employees will be happy to work on things they can put on their resume.</li>
             </ul>
         </section>
 
         <section>
-            //TODO :: backstop
+            <blockquote>
+                <h2>Train people well enough so they can leave,</h2>
+                <h2>Treat them well enough so they don't want to.</h2>
+                <cite>- Richard Branson</cite>
+            </blockquote>
         </section>
+
+        <section>
+            <h1>BackstopJS</h1>
+            <img src="resources/backstop.png" />
+        </section>
+
+        <section>
+            <img src="resources/backstop_pr.png" />
+        </section>
+
+        <section>
+            <img src="resources/backstop_2.png" />
+        </section>
+
+
+        <!-- Hot to contribute 2 -->
 
         <section>
             <h2>2. Open Source your own projects</h2>
@@ -175,10 +232,11 @@
                 <li>SQUP</li>
                 <li>SQ James</li>
                 <li>Web Components Core</li>
+                <li>Web Table Component</li>
                 <li>Web Assets Library</li>
                 <li>SQ Gulp</li>
+                <li>SAP</li>
             </ul>
-            //TODO :: more examples
         </section>
 
         <section>
@@ -188,29 +246,24 @@
                 <li>IPM</li>
                 <li>SQ Metrics</li>
             </ul>
-            //TODO :: more examples
         </section>
 
         <section>
             <h2>False Assumptions</h2>
             <ul>
-                <li>Developers will work for me for free
-                <li>I will have a huge community, people will worship us
-                <li>I will lose money by giving my technology away for free
+                <li class="fragment">Developers will work for me for free.</li>
+                <li class="fragment">We will have a thriving open source community.</li>
+                <li class="fragment">I will lose money by giving my technology away for free.</li>
             </ul>
         </section>
 
         <section>
             <h2>What you really win</h2>
             <ul>
-                <li>Transparency (Hey that's one of our values :D)</li>
-                <li>Visibilty
-                    <ul>
-                        <li>To potential employees (Hey look at the great tech we have !)</li>
-                        <li>To tech savvy people</li>
-                    </ul>
-                </li>
-                <li>Your employees no longer work on obscure internal frameworks, you win trust from them.</li>
+                <li class="fragment">Attract Talent</li>
+                <li class="fragment">Cleaner code</li>
+                <li class="fragment">More varied work for developers</li>
+                <li class="fragment">Your developers can improve their portfolio</li>
             </ul>
         </section>
 
@@ -237,16 +290,16 @@
 <script>
     // More info https://github.com/hakimel/reveal.js#configuration
     Reveal.initialize({
-                          history: true,
+        history: true,
 
-                          // More info https://github.com/hakimel/reveal.js#dependencies
-                          dependencies: [{
-                              src: 'plugin/notes/notes.js',
-                              async: true
-                          }, {
-                              src: 'plugin/tagcloud.js'
-                          }]
-                      });
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [{
+            src: 'plugin/notes/notes.js',
+            async: true
+        }, {
+            src: 'plugin/tagcloud.js'
+        }]
+    });
 </script>
 </body>
 </html>
